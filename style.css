@@ -17,8 +17,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: black;
+    color: whitesmoke;
 }
 
 nav ul {
@@ -26,6 +26,7 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 nav ul li {
@@ -33,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color:whitesmoke;
     text-decoration: none;
 }
 
@@ -65,6 +66,19 @@ nav ul li a {
     margin: 0;
 }
 
+/* IMAGES */
+
+.imageSection1 {
+
+background-image: url(/assets/pexels-bertellifotografia-2868242.jpg);
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+border : solid 8px orange;
+border-radius : 10px;
+}
+
+
 /*LES TITTRES* et PARAGRAPHES */
 
 h1 {
@@ -89,10 +103,23 @@ P {
 /*SECTION SERVICES*/
 
 
+.spaceBetween {
+justify-content: space-between;    
+}
 
-
-
-
+.containerGrid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 10px; 
+    background-color: black;
+    justify-content: center;
+}
+.box {
+    background-color: black;
+    padding: 20px;
+    text-align: justify;
+    color: white;
+}
 
 
 
@@ -102,7 +129,7 @@ P {
 
 
 
-
+/*avis clients*/
 
 
 
