@@ -1,13 +1,24 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Corinthia:wght@400;700&display=swap');
+
+
 /* REINITIALISATION*/
 * {padding: 0;
-margin: 0;}
+margin: 0;
+font-family: "Alegreya", serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+font-size: x-large;
+font-style: italic;
+
+}
 
 
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-image: url(/assets/marcos-paulo-prado-0uXAVaRE53Y-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,10 +73,6 @@ nav ul li a {
     position: relative;
     z-index: 1;
 }
-.contenu h1 {
-    font-size: 4em;
-    margin: 0;
-}
 
 .contenu p {
     font-size: 1.5em;
@@ -86,7 +93,7 @@ border-radius : 10px;
 
 .btnbrazil {
 background: linear-gradient(0deg, #d59723 0%, rgb(61, 189, 41) 100%);
-padding: 20px;
+padding: 8px;
 border-radius: 5px;
 text-decoration: none;
 color: white;
@@ -94,21 +101,39 @@ font-weight: 500;
 }
 
 
-/*LES TITTRES* et PARAGRAPHES */
+/*LES TITRES* et PARAGRAPHES */
 
 h1 {
-
+    font-family: "Corinthia", cursive;
+    font-weight: 900;
+    font-style: normal;
+   
 
 }
 
 h2 {
-
+    font-family: "Corinthia", cursive;
+    font-weight: 1200;
+    font-style:normal;
+    font-size: xx-large;
+color: orange;
 
 }
 
 h3 {
+    font-family: "Corinthia", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: xx-large;
+color: orange;
+}
 
-
+h4 {
+    font-family: "Corinthia", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: xx-large;
+color: whitesmoke;
 }
 
 P {
