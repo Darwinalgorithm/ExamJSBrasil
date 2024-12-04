@@ -8,18 +8,25 @@ margin: 0;}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url(/assets/marcos-paulo-prado-0uXAVaRE53Y-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*HEADER ET NAV*/
+/*HEADER NAV et MON BOUTON BRAZIL*/
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
     background-color: black;
     color: whitesmoke;
+    padding: 50px;
+    min-height: 50px;
+
 }
+
 
 nav ul {
     list-style: none;
@@ -29,9 +36,7 @@ nav ul {
     background-color: black;
 }
 
-nav ul li {
-    margin-right: 20px;
-}
+
 
 nav ul li a {
     color:whitesmoke;
@@ -41,6 +46,7 @@ nav ul li a {
 
 .logo img {
     height: 50px;
+    border-radius: 8px;
 }
 
 
@@ -78,6 +84,15 @@ border : solid 8px orange;
 border-radius : 10px;
 }
 
+.btnbrazil {
+background: linear-gradient(0deg, #d59723 0%, rgb(61, 189, 41) 100%);
+padding: 20px;
+border-radius: 5px;
+text-decoration: none;
+color: white;
+font-weight: 500;
+}
+
 
 /*LES TITTRES* et PARAGRAPHES */
 
@@ -105,6 +120,9 @@ P {
 
 .spaceBetween {
 justify-content: space-between;    
+}
+.align-center{
+    align-items: center;
 }
 
 .containerGrid {
