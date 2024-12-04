@@ -2,30 +2,67 @@
 
 Il s'agira ici de faire un site relatif au restaurant brésilien et de témoigner par cet
 exercice du niveau de compréhension, de cohérence et de maîtrise des différents 
-langages abordés jusqu'ici. une attention aprticulière sera donnée à l'égard du travail
+langages abordés jusqu'ici. Une attention particulière sera donnée à l'égard du travail
 préparatoire, du dessin, du pseudo code. Un autre élément fondamental doit être aussi rappelé :
-au lieu de partir dans tous les sens et de manière peu réfléchi, cet examen doit être
-appréhendé sous l'angle de la méthode, du step by step. Ainsi des problèmes complexes
+au lieu de partir dans tous les sens et de manière peu réfléchie, cet examen doit être
+appréhendé sous l'angle de la méthode, du step by step. Ainsi, des problèmes complexes
 qui nous font perdre nos moyens, dont on ne sait pas par quels bout les prendre, peuvent
-être résolu avec de la méthode. Reprenons donc Descartes :
+être résolus avec de la méthode. Reprenons donc Descartes :
 
-"Ce n'est pas assez d'avoir l'esprit bon, mais le principal est de l'appliquer bien[] et ceux qui ne marchent que fort lentement peuvent avancer beaucoup davantage, s'ils suivent toujours le droit chemin, que ne font ceux qui courent et qui s'en éloignent."
+"Ce n'est pas assez d'avoir l'esprit bon, mais le principal est de l'appliquer bien [...] et ceux qui ne marchent que fort lentement peuvent avancer beaucoup davantage, s'ils suivent toujours le droit chemin, que ne font ceux qui courent et qui s'en éloignent."
 Règle d’analyse : “Diviser chacune des difficultés que j’examinerais en autant de parcelles qu’il se pourrait et qu’il serait requis pour les mieux résoudre” (Discours de la méthode, partie IV). Cette règle recommande de décomposer les problèmes en parties plus petites et plus faciles à résoudre, afin de mieux comprendre et de trouver une solution.
 
 Voilà ce que doivent être mes boussoles.
 
-PSEUDO-CODE :
+PSEUDO-CODE et commentaires pas à pas :
 
-En premier lieu il va falloir établir la connection entre nos fichiers.
-J'ai réservé ici ce fichier mon les notes afin de ne pas perturber mon code.
+En premier lieu il va falloir établir la connexion entre nos fichiers.
+J'ai réservé ici ce fichier css pour les notes afin de ne pas perturber mon code !
 
-En second lieu il va falloir télécharger le fichier jason associé à notre projet, 
+En second lieu il va falloir télécharger le fichier json associé à notre projet, 
 crée un répertoire asset pour y stocker les images.
 
 Un travail de veille doit suivre afin de sélectionner un site esthétique.
 
 Une fois se site choisis il s'agira d'en reproduire la structure html (puis css)
 
-Une fois cette structure faite, il faudra rendre se site dynamique en iy intégrant les données Json, en bref faire du javascript.
+Une fois cette structure faite, il faudra rendre se site dynamique en y intégrant les données Json, en bref faire du javascript.
+
+La donnée vient d’être enregistrée et déposée dans mon fichier json. 
+Comment est-elle structurée ?
+
+On observe d’abord, probablement dans le header quatre éléments :
+
+(1) le nom commercial “nomCommercial”
+
+(2) “texteAccroche”
+
+(3)”texteBouton”
+(4) Promesses client
+
+Ensuite (5/*3) 
+on observe une série de 5 plats tous dotés des sous catégories suivantes : nom desc image.
+
+3 services avec nom et description seulement.
+
+Enfin, (3/*4) 
+les témoignages sont la partie la plus ramifiée avec 4 sous catégories (prénom expérience commentaire et note)
+
+On fera particulièrement attention à copier coller les éléments de structures de ce tableau.
+
+Avant toute chose nous allons vérifier la qualité et la connexion des données en faisant divers console.log.
+
+Une fois cette vérification faite, sereinement, nous élaborerons notre structure html.
+j'ai téléchargé le logo.
+
+Site d'intérêt obrigado, bossa nova grill : https://bossanovagrill.be/ et bossa nova restaurant Olà https://lepaindesucre-lyon.fr/
+
+je chois ensuite la structure générale pour le site. J'opte pour la simplicité.
+un header avec le logo, les catégories accueil, services, plats avis clients ou témoignage, un boutons réservation peut-être.
+un gros titre avec le slogan et une belle image de rio
+
+une section service en 3*2
+une section Plats en 5 ou 6*3
+et enfin une section avis client en 3*4
 
 
