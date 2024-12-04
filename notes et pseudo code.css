@@ -70,4 +70,7 @@ bref, le style... site images gratuites.
 idée de reprendre notre dégradé couleur vert organge qui rappelle la mangue comme élément dynamique à intégrer sur nos 
 outils d'actions.
 
+Maintenant que la structure est correcte, alors je charge les données Json avec le fetch dans mon fichier JS.
+on a changé auparavant les "-url" il faut enlever les "-" nous a dit ludivine, s'en souvenir ! 
+
 
