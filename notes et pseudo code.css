@@ -1,0 +1,31 @@
+/*ICI COMMENTAIRES GENERAUX ET PSEUDO CODE
+
+Il s'agira ici de faire un site relatif au restaurant brésilien et de témoigner par cet
+exercice du niveau de compréhension, de cohérence et de maîtrise des différents 
+langages abordés jusqu'ici. une attention aprticulière sera donnée à l'égard du travail
+préparatoire, du dessin, du pseudo code. Un autre élément fondamental doit être aussi rappelé :
+au lieu de partir dans tous les sens et de manière peu réfléchi, cet examen doit être
+appréhendé sous l'angle de la méthode, du step by step. Ainsi des problèmes complexes
+qui nous font perdre nos moyens, dont on ne sait pas par quels bout les prendre, peuvent
+être résolu avec de la méthode. Reprenons donc Descartes :
+
+"Ce n'est pas assez d'avoir l'esprit bon, mais le principal est de l'appliquer bien[] et ceux qui ne marchent que fort lentement peuvent avancer beaucoup davantage, s'ils suivent toujours le droit chemin, que ne font ceux qui courent et qui s'en éloignent."
+Règle d’analyse : “Diviser chacune des difficultés que j’examinerais en autant de parcelles qu’il se pourrait et qu’il serait requis pour les mieux résoudre” (Discours de la méthode, partie IV). Cette règle recommande de décomposer les problèmes en parties plus petites et plus faciles à résoudre, afin de mieux comprendre et de trouver une solution.
+
+Voilà ce que doivent être mes boussoles.
+
+PSEUDO-CODE :
+
+En premier lieu il va falloir établir la connection entre nos fichiers.
+J'ai réservé ici ce fichier mon les notes afin de ne pas perturber mon code.
+
+En second lieu il va falloir télécharger le fichier jason associé à notre projet, 
+crée un répertoire asset pour y stocker les images.
+
+Un travail de veille doit suivre afin de sélectionner un site esthétique.
+
+Une fois se site choisis il s'agira d'en reproduire la structure html (puis css)
+
+Une fois cette structure faite, il faudra rendre se site dynamique en iy intégrant les données Json, en bref faire du javascript.
+
+
