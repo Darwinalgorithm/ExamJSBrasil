@@ -7,7 +7,7 @@
 //bon ça marche. à présent je dois intégrer mes variables dedans si je veux pouvoir les utiliser.
 //mes variables :
 
-fetch('./restaurant-bresilien.json')
+fetch('restaurant-bresilien.json')
 .then(response => {
       return response.json();
     })
