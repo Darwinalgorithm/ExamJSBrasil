@@ -76,11 +76,7 @@ nav ul li a {
     border-radius: 50px;
 } /*le border-radius ne marche pas, j'ai mieux ciblé mais toujours pas*/
 
-#nomduResto {
-font-size: xx-large;
-font-weight: 900;
 
-}
 
 .container {
     position: relative;
@@ -127,9 +123,14 @@ img {
     height: auto;    /* Conserve les proportions */
   }
 
-.mer {
-width : 100%;
-height: 95px;
+.mer{
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 62%; /*coup de main de nicolas*/
+    padding: 40px;
+justify-items: center;
+   
 }
                                                 /*B O U T O N*/
 .btnbrazil {
@@ -149,9 +150,19 @@ h1 {
     font-weight: 900;
     font-style: normal;
     padding:10px;
-   
-
 }
+
+#nomduResto {
+
+    font-weight: 2650;
+    font-family: "Alegreya", serif;
+    font-style: normal;
+    color: green;
+   
+    }
+    /*je n'arrive pas à grossir plus le nom...*/
+
+
 
 h2 {
     font-family: "Corinthia", cursive;
@@ -159,6 +170,7 @@ h2 {
     font-style:bold;
     font-size: xx-large;
 color: orange;
+background-color: black;
 
 }
 
@@ -193,6 +205,12 @@ justify-content: space-between;
 .align-center{
     align-items: center;
 }
+
+/*afin de laisser apparaître notre image de background, je fais une cat padding*/
+.padding {
+padding: 35px;
+}
+
 
 .containerGrid {
     display: grid;
@@ -229,6 +247,7 @@ padding: 25px;
 display: flex;
 flex: 1, 1, auto;
 justify-content: space-evenly;
+flex-wrap: wrap;
 align-content: center;
 align-items: center;
 }

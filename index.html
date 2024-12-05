@@ -25,29 +25,30 @@
                 <li><a href="#avisClients">Les Avis de nos Très Chers Clients</a></li>
                 <li><a href="#Réservations" class="btnbrazil">Réservations</a></li>
             </ul>
-           
+
         </nav>
 
     </header>
     <main class="imageMain">
 
-        <section class="container imageSection1">
+        <section class="container imageSection1 padding">
             <div class="contenu">
 
-                <h2 id="nomduResto">Tudo de Bom - Restaurant Brésilien à Marseille</h2>
+                <h2 id="nomduResto">Tudo de Bom - <span style="color:orange">Restaurant Brésilien à Marseille</span>
+                </h2>
                 <h1> Voyagez au cœur de la gastronomie brésilienne avec Tudo de Bom, votre restaurant à Marseille.
                     <br>Une nourriture enivrante, une ambiance relaxante
                     <br>(Comida inebriante e uma atmosfera relaxante)
                 </h1>
 
                 <div>
-                    <a href="#" class="btnbrazil">Dégustez nos saveurs !</a> <!-- div pour l'espace... -->
+                    <a class="btnbrazil">Dégustez nos saveurs !</a> <!-- div pour l'espace... -->
                 </div>
 
         </section>
-<div>
-   <video class="mer" src="assets/restaumer.mp4" muted autoplay loop></video>
-</div>
+        <div>
+            <video class="mer" src="assets/restaumer.mp4" muted autoplay loop></video>
+        </div>
 
 
 
@@ -55,7 +56,7 @@
             <!-- SERVICES -->
             <h2 id="Services">Services</h2>
 
-            <div id="containerServices" class="containerGrid spaceBetween">
+            <div id="containerServices" class="containerGrid spaceBetween padding">
 
                 <div class="box">
                     <h3>texte</h3>
@@ -79,7 +80,7 @@
 
             <h2 id="Nosplats">Nos Plats</h2>
 
-            <div id="containerPlats" class="containerGrid spaceBetween">
+            <div id="containerPlats" class="containerGrid spaceBetween padding">
 
                 <div class="box">Plat 1</div>
                 <div class="box">Plat 2</div>
@@ -96,7 +97,7 @@
 
             <h2 id="PromessesClients">Promesses des clients</h2>
 
-            <div id="containerPromesses" class="containerGrid spaceBetween">
+            <div id="containerPromesses" class="containerGrid spaceBetween align-center padding">
                 <p>authentique</p>
                 <p>convivial</p>
                 <p>exquis</p>
@@ -108,7 +109,7 @@
             <!-- avis clients -->
             <h2 id="avisClients">Avis clients, témoignages</h2>
 
-            <div id="containerTemoignages" class="containerGrid spaceBetween">
+            <div id="containerTemoignages" class="containerGrid spaceBetween padding">
                 <div class="box">
                     <h4>avis1</h4>
                     <p>Nom de l'Expérience</p>
@@ -131,18 +132,28 @@
             </div>
 
 
-            <center>
-                <a href="" class="btnbrazil">Réservez !</a>
-            </center> <!-- en attendant inutile même-->
+
+
+
 
         </section>
     </main>
-    <footer>
-        <a href="">Notre adresse</a> <!-- plan ou image de Marseilles -->
+    <footer class="spaceBetween padding">
+
         <a href="">Nous contacter</a>
         <a href="">Laisser un commentaire</a>
         <a href="">Nous suivre sur les réseaux</a>
 
+        <p>Dans l'attente de vous recevoir au plus tôt, vous pouvez dès à présent réserver.</p>
+        <a href="" class="btnbrazil">Réservez !</a>
+
+        <div>
+            <h3>Notre adresse</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6912.233917242547!2d5.3649930831032275!3d43.24646790286249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c70bbf33cf23%3A0x814c29d0949bf4b!2sPacific%20Palissades!5e0!3m2!1sfr!2sfr!4v1733414454075!5m2!1sfr!2sfr"
+                width="850" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
