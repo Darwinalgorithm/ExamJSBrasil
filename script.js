@@ -48,11 +48,12 @@ function ajouterElementsAuDOM(liste, conteneurId, genererHTML) {
     });
   }
   
-  // Fonctions pour générer le HTML de chaque section
+  // Fonctions pour générer le HTML de chaque section et on intègre l'aos ici même ! dans la class !
   function genererHTMLService(service) {
     return `
-      <div class="box">
-        <h3>${service.nom}</h3>
+      <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> 
+  
+      <h3>${service.nom}</h3>
         <p>${service.desc}</p>
       </div>
     `;
@@ -60,7 +61,7 @@ function ajouterElementsAuDOM(liste, conteneurId, genererHTML) {
   
   function genererHTMLPlat(plat) {
     return `
-      <div class="box">
+      <div class="box" data-aos="fade-up" data-aos-duration="3000">
         <img src="${plat.imageUrl}" alt="${plat.nom}">
         <h3>${plat.nom}</h3>
         <p>${plat.desc}</p>
@@ -69,12 +70,19 @@ function ajouterElementsAuDOM(liste, conteneurId, genererHTML) {
   }
   
   function genererHTMLPromesse(promesse) {
-    return `<p>${promesse}</p>`;
+    return `
+    <div id="containerPromesses" class="containerGrid spaceBetween data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"">
+    <p>${promesse}</p>
+    </div>`;
   }
+  //ai-je bien fait de mettre la class sur le p en solo ? ça ne marche pas en effet pb d'affichage HTML, manque la div :
+
   
+                
+            
   function genererHTMLTemoignage(temoignage) {
     return `
-      <div class="box">
+      <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <h4>${temoignage.prenom}</h4>
         <p>${temoignage.typeExperience}</p>
         <p>${temoignage.commentaire}</p>

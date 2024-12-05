@@ -182,3 +182,23 @@ réussite s'accompagne d'un nouveau problème le texte des donnée n'apparaît p
 l'#, mais j'ai un peu peur de déplacer quelque chose qui marchait... ! et ils se comporte in line...
 trop dangereux, je vais demander de l'aide et me concentrer sur le html.
 dingue mes liens internes au site avec id # ne marchent pas ?!
+
+DONC POUR L'heure pb :
+1 avec le header, bouton et logo à modifier, padding, margin, border radius
+2 le lien internes id #
+3 l'animation aos
+
+nicolas vient de résoudre la plupart de mes problèmes 
+l'aos c'est évidemment dans JS !! pas dans le html !!
+mes liens étaient mauvais car j'ai répété le #, n'importe quoi...
+quand au header du padding dans la nav et une classe ou id spécifique pour le logo.
+
+
+dingue je n'avais pas le début du header, j'avais du l'effacer par erreur. (et de fait le main était à déplacer)
+l'arrivée du header a fait sauter mon image
+ajoutant du padding dans la nav, je retrouve mon image feu d'artifice au header.... décidément...
+je n'avais pas mesurer l'effet du header...
+bon, calmement, allons du plus simple au plus complexe. Régler les problèmes et poser une vidéo dans le hero.
+dingue comme je galère à cibler mon logo. au pire j'écris dans sa ligne width
+J'ai eu pas mal de difficulté à cause du marger auto dans mes li, à éviter, suis passé au margin left. mais y a tjs de l'espace
+entre mon bouton et la droite... pour s'en sortir j'ai joué avec le width du logo et de l'ul. 
