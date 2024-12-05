@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo de Bom - Restaurant Brésilien à Marseille</title>
     <link rel="stylesheet" href="/style.css">
+    <!--ci-dessous le lien aos afin d'inclure les effets de style proposés par Nicolas, special thx to Michalsnik @ https://michalsnik.github.io/aos/-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -13,14 +15,15 @@
     <main>
         <nav>
             <ul class="spaceBetween align-center">
-                <li><a href="#accueil"><img src="/assets/ogo-bresilien-2.png" alt="Logo" width="100" height="60"></a>
+                <li><a href="#accueil"><img src="/assets/ogo-bresilien-2.png" alt="Logo" width="100" height="60"></a> <!-- à revoir -->
                 </li>
-                <li><a href="#carte">Notre Carte</a></li>
+                <li><a href="#carte">Notre Carte</a></li> <!-- vide mais devrait exister -->
                 <li><a href="#Services">Nos Services</a></li>
                 <li><a href="#Nos plats">Nos Plats du Moment</a></li>
                 <li><a href="#PromessesClients">Promesses Clients</a></li>
                 <li><a href="#avisClients">Les Avis de nos Très Chers Clients</a></li>
                 <li><a href="#Réservations" class="btnbrazil">Réservations</a></li>
+                <!-- mon réservation n'est pas utile !? -->
             </ul>
         </nav>
 
@@ -45,41 +48,68 @@
         </section>
         <section>
             <!-- SERVICES -->
-            <h2>Services</h2>
+            <h2 id="#Services">Services</h2>
 
             <div id="containerServices" class="containerGrid spaceBetween">
-                <div class="box">
-                    <h3>texte</h3>
-                    <p>Service 1 description</p>
+
+                
+                    <div class="box">
+                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></div>
+                        <h3>texte</h3>
+                        <p>Service 1 description</p>
+                    </div>
+                    </div>
+               
+
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="box">
+                        <h3>texte</h3>
+                        <p>Service 2 description</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <h3>texte</h3>
-                    <p>Service 2 description</p>
+
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="box">
+                        <h3>texte</h3>
+                        <p>Service 3 description</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <h3>texte</h3>
-                    <p>Service 3 description</p>
-                </div>
+
             </div>
         </section>
 
         <section> <!-- NOS P L A T S ! -->
-            <h2>Nos Plats</h2>
-
+            <h2 id="#Nos plats">Nos Plats</h2>
+            <!-- NOUVEAUTE  : INTEGRATION DES EFFETS PRIS SUR LA BIBLIOTHEQUE AOS  -->
 
             <div id="containerPlats" class="containerGrid spaceBetween">
-                <div class="box">Plat 1</div>
-                <div class="box">Plat 2</div>
-                <div class="box">Plat 3</div>
-                <div class="box">Plat 4</div>
-                <div class="box">Plat 5</div>
+
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <div class="box">Plat 1</div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <div class="box">Plat 2</div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <div class="box">Plat 3</div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <div class="box">Plat 4</div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <div class="box">Plat 5</div>
+                </div>
             </div>
 
 
         </section>
 
         <section> <!-- PROMESSES CLIENTS -->
-            <h2>Promesses des clients</h2>
+            <h2 id="#PromessesClients">Promesses des clients</h2>
 
             <div id="containerPromesses" class="containerGrid spaceBetween">
                 <p>authentique</p>
@@ -93,7 +123,7 @@
 
         <section>
             <!-- avis clients -->
-            <h2>Avis clients, témoignages</h2>
+            <h2 id="#avisClients">Avis clients, témoignages</h2>
 
             <div id="containerTemoignages" class="containerGrid spaceBetween">
                 <div class="box">
@@ -125,13 +155,16 @@
         </section>
     </main>
     <footer>
-<a href="">Notre adresse</a>
-<a href="">Nous contactrz</a>
-<a href="">laisser un commentaire</a>
-<a href="">Nous suivre sur les réseaux</a>
+        <a href="">Notre adresse</a>
+        <a href="">Nous contactez</a>
+        <a href="">laisser un commentaire</a>
+        <a href="">Nous suivre sur les réseaux</a>
 
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> <!-- première fois que j'utilise aos, reste à savoir s'il est bien placé -->
     <script src="/script.js" defer></script>
 </body>
 

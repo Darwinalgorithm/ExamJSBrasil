@@ -164,3 +164,21 @@ Ainsi cette formule apparaît bien plus éléguante que la répétition que j'al
   Je dois à présent redimensionner ces belles images, mieux disposer mes boutons, arrondir le logo, revoir l'image de background, revoir le contraste et la taille des polices. j'aimerai essayer de glisser du son, de la bossa nova dans la page, directement ou avec un icone. et intégrer le flip sur les plats que nous avait montré nicolas, après le hamburger, sur un site, c'était top.
   changer l'image backgroune du main, qqch de plus sombre, pourquoi pas rio la nuit ou feux d'artifices ? la questiond e l'animation va se poser. peut-être reprendre la couleur mangue, le dégradé sur mes boutons, à voir. crevé, mais y a du résultat.
  
+5 dec : j'essai d'ajouter des élémentsd'animation sur mes cartes de plats? j'utilise aos, lmais cela ne marche pas.
+La procédure implique déjà :
+(1) Inclure ceci dans le head :
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+(2) (a) inclure dans le JS ceci, en deux fois :
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+   (b) <script> AOS.init(); </script>
+Mais cela ne marche pas, faut-il déplacer le JS initial avec le defer ?? Mais peut-être est-ce du à ma structure html
+incomplète pour les plats. Si bien que je pourrais m'étonner que cela apparaissent (en effet ma structure d'accueil
+est pour l'heure une simple div !!, dans image et txt !! 
+=> essayer avec les services. cela ne marhe pas non plus.
+j'entouré la div, il fallait se mettre en dessous et entourer les éléments de la div, mais, comme d'habitude, une 
+réussite s'accompagne d'un nouveau problème le texte des donnée n'apparaît plus ! j'ai l'impression qu'il faut déplacer
+l'#, mais j'ai un peu peur de déplacer quelque chose qui marchait... ! et ils se comporte in line...
+trop dangereux, je vais demander de l'aide et me concentrer sur le html.
+dingue mes liens internes au site avec id # ne marchent pas ?!
