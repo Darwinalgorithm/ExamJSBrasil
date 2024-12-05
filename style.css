@@ -154,10 +154,10 @@ h1 {
 
 #nomduResto {
 
-    font-weight: 2650;
-    font-family: "Alegreya", serif;
-    font-style: normal;
-    color: green;
+    font-weight: 600;
+    font-size: 70px;
+    font-family: "Corinthia", cursive;
+    color: orange;
    
     }
     /*je n'arrive pas à grossir plus le nom...*/
