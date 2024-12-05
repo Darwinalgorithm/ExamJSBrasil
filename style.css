@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Corinthia:wght@400;700&display=swap');
 
 
-/* REINITIALISATION*/
+                                                /* REINITIALISATION*/
 * {padding: 0;
 margin: 0;
 font-family: "Alegreya", serif;
@@ -24,11 +24,11 @@ body {
     background-size: cover;
 }
 
-/*HEADER NAV et MON BOUTON BRAZIL*/
+                                            /*HEADER NAV et MON BOUTON BRAZIL*/
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     background-color: black;
@@ -58,7 +58,7 @@ nav ul li a {
 .logo img {
     height: 50px;
     border-radius: 8px;
-}
+} /*le border-radius ne marche pas*/
 
 
 .container {
@@ -79,7 +79,7 @@ nav ul li a {
     margin: 0;
 }
 
-/* IMAGES */
+                                                /* IMAGES */
 
 .imageSection1 {
 
@@ -91,6 +91,13 @@ border : solid 8px orange;
 border-radius : 10px;
 }
 
+img {
+    max-width: 100%; /* Empêche les images de dépasser la largeur de leur conteneur */
+    height: auto;    /* Conserve les proportions */
+  }
+
+
+                                                /*B O U T O N*/
 .btnbrazil {
 background: linear-gradient(0deg, #d59723 0%, rgb(61, 189, 41) 100%);
 padding: 8px;
@@ -101,7 +108,7 @@ font-weight: 500;
 }
 
 
-/*LES TITRES* et PARAGRAPHES */
+                                        /*LES TITRES* et PARAGRAPHES */
 
 h1 {
     font-family: "Corinthia", cursive;
@@ -140,8 +147,10 @@ P {
 color: whitesmoke;
 }
 
-/*SECTION SERVICES*/
+                                                /*SECTION SERVICES*/
 
+
+                                                /*CLASSES FONCTIONS*/
 
 .spaceBetween {
 justify-content: space-between;    
@@ -167,24 +176,37 @@ justify-content: space-between;
 
 
 
-/*SECTION PLATS*/
+                                    /*SECTION PLATS*/
+
+                                /*      PROMESSES */
+
+
+                                     /*SECTION AVIS CLIENTS*/
+
+
+                                        /*F O O T E R*/
+
+footer {
+
+    background-color: black;
+min-height: 10vh;
+display: flex;
+flex: 1, 1, auto;
+justify-content: space-evenly;
+align-content: center;
+align-items: center;
+}
+
+footer > a {
+text-decoration: none;
+color: whitesmoke;
+}
 
 
 
 
-/*avis clients*/
 
 
 
-
-
-
-
-
-
-
-
-
-/*SECTION AVIS CLIENTS*/
 
 

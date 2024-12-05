@@ -39,119 +39,63 @@ console.log("Témoignages :", temoignages);
 //on n'oublie pas les antiquotes !
 
 // face aux difficultés : fonction fondamentale :
-
-
-    function ajouterElementsAuDOM(liste, conteneurId, genererHTML) {
-        const conteneur = document.querySelector(`#${conteneurId}`);
-      
-        // Vide le conteneur pour éviter les doublons
-        conteneur.innerHTML = '';
-      
-        // Ajoute chaque élément au conteneur
-        liste.forEach(item => {
-          conteneur.innerHTML += genererHTML(item);
-        });
-      }
-      
-      function genererHTMLPromesse(promesse) {
-        return `<p>${promesse}</p>`;
-      }
-      
-      fetch('./restaurant-bresilien.json')
-        .then(response => response.json())
-        .then(donnee => {
-          // Ajoute les promesses clients au conteneur
-          ajouterElementsAuDOM(donnee.promessesClient, 'containerPromesses', genererHTMLPromesse);
-        })
-        .catch(error => console.error("Erreur lors du chargement :", error));
-        
-        fetch('./restaurant-bresilien.json')
-        .then(response => response.json())
-        .then(donnee => {
-          // Services
-          ajouterElementsAuDOM(donnee.services, 'containerServices', genererHTMLService);
-      
-          // Promesses clients
-          ajouterElementsAuDOM(donnee.promessesClient, 'containerPromesses', genererHTMLPromesse);
-      
-          // Témoignages
-          ajouterElementsAuDOM(donnee.temoignages, 'containerTemoignages', genererHTMLTemoignage);
-        })
-      
-        function genererHTMLTemoignage(temoignage) {
-            return `
-              <div class="box">
-                <h4>${temoignage.prenom}</h4>
-                <p>${temoignage.typeExperience}</p>
-                <p>${temoignage.commentaire}</p>
-                <p>Note : ${temoignage.note}</p>
-              </div>
-            `;
-          }
-
-    /*
-fetch('./restaurant-bresilien.json')
-  .then(response => response.json())
-  .then(donnee => {
-
-    let ConteneurHTMLService = document.getElementById('containerServices');
-
-
-    donnee.services.forEach(service => {
-      const serviceHTML = `
-        <div class="box">
-          <h3>${service.nom}</h3>
-          <p>${service.desc}</p>
-        </div>
-      `;
-      ConteneurHTMLService.innerHTML += serviceHTML;
+// Fonction générale pour injecter des éléments dans le DOM
+function ajouterElementsAuDOM(liste, conteneurId, genererHTML) {
+    const conteneur = document.querySelector(`#${conteneurId}`);
+    conteneur.innerHTML = ''; // Vide le conteneur avant d'ajouter les éléments
+    liste.forEach(item => {
+      conteneur.innerHTML += genererHTML(item);
     });
-  })
-
-document.querySelector("#containerServices").innerHTML+=CarteServiceAdupliquer;
-//c'est la formule que Ludivine m'a montré et que j'aime bien car condensée
-
-//Passons aux témoignages
-
-
-    function genererHTMLPromesse(promesse) {
-        return `<p>${promesse}</p>`;
-      }
-      fetch('./restaurant-bresilien.json')
-  .then(response => response.json())
-  .then(donnee => {
-    // Ajoute les promesses clients au conteneur
-    ajouterElementsAuDOM(donnee.promessesClient, 'containerPromesses', genererHTMLPromesse);
-  })*/
-
-
-
-
-
-
-
-
-// je passe aux avis clients 
-
-
-/*
-fetch('./restaurant-bresilien.json')
-  .then(response => response.json())
-  .then(donnee => {
-
-    let conteneurHTMLTemoignages = document.getElementById('containerTemoignages');
+  }
   
-    donnee.temoignages.forEach(temoignage => {
-      const CarteTemoignageAdupliquer = ` 
-    <div class="box">
+  // Fonctions pour générer le HTML de chaque section
+  function genererHTMLService(service) {
+    return `
+      <div class="box">
+        <h3>${service.nom}</h3>
+        <p>${service.desc}</p>
+      </div>
+    `;
+  }
+  
+  function genererHTMLPlat(plat) {
+    return `
+      <div class="box">
+        <img src="${plat.imageUrl}" alt="${plat.nom}">
+        <h3>${plat.nom}</h3>
+        <p>${plat.desc}</p>
+      </div>
+    `;
+  }
+  
+  function genererHTMLPromesse(promesse) {
+    return `<p>${promesse}</p>`;
+  }
+  
+  function genererHTMLTemoignage(temoignage) {
+    return `
+      <div class="box">
         <h4>${temoignage.prenom}</h4>
         <p>${temoignage.typeExperience}</p>
         <p>${temoignage.commentaire}</p>
-        <p>${temoignage.note}</p>
-    </div>
+        <p>Note : ${'⭐'.repeat(temoignage.note)}</p>
+      </div>
     `;
-    conteneurHTMLTemoignages.innerHTML += CarteTemoignageAdupliquer;
-  });
-})
-
-document.querySelector("#containerTemoignages").innerHTML+=CarteTemoignageAdupliquer;*/
+  }
+  
+  // Fetch pour charger les données JSON et injecter les sections
+  fetch('./restaurant-bresilien.json')
+    .then(response => response.json())
+    .then(donnee => {
+      // Injecter les services
+      ajouterElementsAuDOM(donnee.services, 'containerServices', genererHTMLService);
+  
+      // Injecter les plats
+      ajouterElementsAuDOM(donnee.plats, 'containerPlats', genererHTMLPlat);
+  
+      // Injecter les promesses des clients
+      ajouterElementsAuDOM(donnee.promessesClient, 'containerPromesses', genererHTMLPromesse);
+  
+      // Injecter les avis clients
+      ajouterElementsAuDOM(donnee.temoignages, 'containerTemoignages', genererHTMLTemoignage);
+    })
