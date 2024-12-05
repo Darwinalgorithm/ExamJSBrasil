@@ -205,3 +205,6 @@ entre mon bouton et la droite... pour s'en sortir j'ai joué avec le width du lo
 bien je n'arrive pas à ciblé mon titre h2, non plus mettre les vidéo en autoplay, et il reste
 mes témoignagnes qui ne s'animent pas car le p n'est pas bon comme cible...j'aurais aussi aimé qu'on anime
 en mode mangue mes action sur les a. 
+étonnant : mon fichier fonctionne bien en local, mais pas sur github, il faut que j'arrête alors de faire le lien
+de mes fichier avec ./ c'est appremment problématique, or je le fais tout le temps.
+j'avais aussi un pb sur les témoigagne, ludivine a tout de suite trouve : guillemets mal fermés.

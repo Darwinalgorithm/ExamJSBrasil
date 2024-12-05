@@ -71,7 +71,7 @@ function ajouterElementsAuDOM(liste, conteneurId, genererHTML) {
   
   function genererHTMLPromesse(promesse) {
     return `
-    <div id="containerPromesses" class="containerGrid spaceBetween data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"">
+    <div id="containerPromesses" class="containerGrid spaceBetween" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"">
     <p>${promesse}</p>
     </div>`;
   }
